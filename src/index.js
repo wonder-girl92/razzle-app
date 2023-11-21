@@ -3,7 +3,7 @@ import express from 'express';
 let app = require('./server/main').default;
 
 if (module.hot) {
-  module.hot.accept('./server', function() {
+  module.hot.accept('./server/main', function() {
     console.log('🔁  HMR Reloading `./server/main`...');
     try {
       app = require('./server/main').default;
